@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout, { Content, Header } from "antd/lib/layout/layout";
+import { createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import { Provider } from "react-redux";
 
-function App() {
+import RepoList from "./RepoList";
+
+import "antd/dist/antd.css";
+import rootReducer from "./reducer/reducer";
+
+const store = createStore(rootReducer, applyMiddleware(thunk));
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Layout style={{ height: "100vh" }}>
+        <Header style={{ color: "white" }}>Jessica Florey</Header>
+        <Content style={{ padding: "16px 50px", flex: 1, overflowY: "auto" }}>
+          <div style={{ background: "white" }}>
+            <RepoList />
+          </div>
+        </Content>
+      </Layout>
+    </Provider>
   );
-}
+};
 
 export default App;

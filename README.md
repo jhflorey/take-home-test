@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+### To run the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Install node_modules
 
-## Available Scripts
+> ``yarn install`
 
-In the project directory, you can run:
+Start local dev
 
-### `yarn start`
+> `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Build the project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> `yarn build`
 
-### `yarn test`
+Run automatic testing: You need to start the local dev and run this cmd:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> `./node_modules/.bin/cypress open`
 
-### `yarn build`
+### What modules are used?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- UI: Ant Design
+- State management: React hook and Redux
+- Other modules: axios
+- Testing: Cypress
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### App structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This application just contains 1 page to list the repos, and repo 'scommits will be shown in a drawer when there is a selected repo.
 
-### `yarn eject`
+List of repos, display by page, and we can navigate between pages
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![](./docs/s1.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+When a repo is selected (by clicking on the name), a drawer will be shown with its latest commits. We can also navigate pages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![](./docs/s2.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Other notes:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- I display repos in the lastest updated time. The purpose is whenever visit this app, I can see what is the latest repo that's been updated.
+- In every pages, there are 10 repos in a page, we can navigate by Prev/Next button, this is because we can't do the pagination (no total repos information)
+- To pass the limitation rate of github api (60 requests per hour), I created a token to call the api freely.

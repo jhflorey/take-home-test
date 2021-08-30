@@ -1,0 +1,2387 @@
+[
+  {
+    "sha": "dc9e819cf5c219067b229ad433dfc55228de6ed4",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6ZGM5ZTgxOWNmNWMyMTkwNjdiMjI5YWQ0MzNkZmM1NTIyOGRlNmVkNA==",
+    "commit": {
+      "author": {
+        "name": "brharrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-20T17:53:23Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-20T17:53:23Z"
+      },
+      "message": "improve performance for computing id (#1332)\n\nRefactors the logic to create the complete id string\r\nbefore feeding into the UTF-8 encoder and then message\r\ndigest. For the existing benchmark this change improves\r\nthe throughput by ~33%.",
+      "tree": {
+        "sha": "27015d33d9ded68a213b13c8b21f2c64db7ce888",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/27015d33d9ded68a213b13c8b21f2c64db7ce888"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/dc9e819cf5c219067b229ad433dfc55228de6ed4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhH+wTCRBK7hj4Ov3rIwAAtxUIADdtD/Hy1YbwkQRSJ1D0S2Ig\nWhd+/k3cYNjGEmNpO3DbKenfBGfxIuZbriiktT1tVeQO/RXbS2aWTO3AuSmmIeVB\nc1b+/asKF01JK4GtWjSC6/cP8MPucYI3kMtyLuQTiCNmlDMjJ79L97xHUxJcJIa+\nuQWNBsoMQ4o8z4PECmvaBqL/Rt32pHb6nAp+hgGVcyLWfYGsPit+fExDcareA7aA\nH5KBSdrH+fEv5csizXI4/JazyUXxLn3YmdOtvE9XzO8mpDAdJIdPNDnJqYnsJLqF\ntK+Q1GGCjVbyFCn9KuGQKou3fBxBqGJJsCTsY7VeDxzww4W979pXd7sxiKzbs3w=\n=yOs1\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 27015d33d9ded68a213b13c8b21f2c64db7ce888\nparent e4e7d48724468323066eca42025570bfc52ebaf2\nauthor brharrington <brharrington@gmail.com> 1629482003 -0500\ncommitter GitHub <noreply@github.com> 1629482003 -0500\n\nimprove performance for computing id (#1332)\n\nRefactors the logic to create the complete id string\r\nbefore feeding into the UTF-8 encoder and then message\r\ndigest. For the existing benchmark this change improves\r\nthe throughput by ~33%."
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/dc9e819cf5c219067b229ad433dfc55228de6ed4",
+    "html_url": "https://github.com/Netflix/atlas/commit/dc9e819cf5c219067b229ad433dfc55228de6ed4",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/dc9e819cf5c219067b229ad433dfc55228de6ed4/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e4e7d48724468323066eca42025570bfc52ebaf2",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/e4e7d48724468323066eca42025570bfc52ebaf2",
+        "html_url": "https://github.com/Netflix/atlas/commit/e4e7d48724468323066eca42025570bfc52ebaf2"
+      }
+    ]
+  },
+  {
+    "sha": "e4e7d48724468323066eca42025570bfc52ebaf2",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6ZTRlN2Q0ODcyNDQ2ODMyMzA2NmVjYTQyMDI1NTcwYmZjNTJlYmFmMg==",
+    "commit": {
+      "author": {
+        "name": "brharrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-19T23:33:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-19T23:33:14Z"
+      },
+      "message": "reduce allocations for computing ids (#1331)\n\nEliminates most of the allocations for computing ids from\r\nthe tag maps. In particular, the buffers, message digest,\r\nUTF-8 encoder, and string array now get reused. It also\r\nuses a custom sort so the tuple allocations can be avoided\r\nand just use pairs of strings in an array.",
+      "tree": {
+        "sha": "54257c66484c36a5fe8754c168fe9b81a57c38d2",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/54257c66484c36a5fe8754c168fe9b81a57c38d2"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/e4e7d48724468323066eca42025570bfc52ebaf2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhHuo6CRBK7hj4Ov3rIwAAeSgIAFYKUf7FlaAi0B54hk09JsPG\naTZzhCS268q75qKTJVYs+tpjG0gNTr8f83XhMIba//LipgZvCwgScD4SpMt+j0lk\n0S0HI+m0GHvk/0eSawAp8lsc3+815fxeU3ZidGEg4c23GQo4+KoSIiZpH8Szbl2a\nh0FrRxfD/HCf7sZa/swIBSYB5zfBmzMl3DJtkEbUaF4NHq7zMmPcpe7HLocuci/l\nYWM/TlHr0+xFJnLynSaJHe+l01ygMiAiqx3LIw2vfv6kayItTh0tCs2F59fmY7m8\nRjdZ+4ngEUE5mSgS9SxxKUD2nZwxT3sRwvg91is/vmsFnrFfH0icX3gS4yJ2oJU=\n=og9n\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 54257c66484c36a5fe8754c168fe9b81a57c38d2\nparent 49716308fd5ae12c8b7b7534a22d0a1eb93cfffc\nauthor brharrington <brharrington@gmail.com> 1629415994 -0500\ncommitter GitHub <noreply@github.com> 1629415994 -0500\n\nreduce allocations for computing ids (#1331)\n\nEliminates most of the allocations for computing ids from\r\nthe tag maps. In particular, the buffers, message digest,\r\nUTF-8 encoder, and string array now get reused. It also\r\nuses a custom sort so the tuple allocations can be avoided\r\nand just use pairs of strings in an array."
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/e4e7d48724468323066eca42025570bfc52ebaf2",
+    "html_url": "https://github.com/Netflix/atlas/commit/e4e7d48724468323066eca42025570bfc52ebaf2",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/e4e7d48724468323066eca42025570bfc52ebaf2/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "49716308fd5ae12c8b7b7534a22d0a1eb93cfffc",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/49716308fd5ae12c8b7b7534a22d0a1eb93cfffc",
+        "html_url": "https://github.com/Netflix/atlas/commit/49716308fd5ae12c8b7b7534a22d0a1eb93cfffc"
+      }
+    ]
+  },
+  {
+    "sha": "49716308fd5ae12c8b7b7534a22d0a1eb93cfffc",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6NDk3MTYzMDhmZDVhZTEyYzhiN2I3NTM0YTIyZDBhMWViOTNjZmZmYw==",
+    "commit": {
+      "author": {
+        "name": "brharrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-19T21:12:48Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-19T21:12:48Z"
+      },
+      "message": "more efficient empty check for hash map (#1330)\n\nUpdates the SmallHashMap implementation to override\r\nthe `isEmpty` method with an efficient check. The\r\ndefault that is inherited will allocate an iterator.",
+      "tree": {
+        "sha": "28b1663704ac56d7de4c52487ffadc98aa1c48ea",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/28b1663704ac56d7de4c52487ffadc98aa1c48ea"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/49716308fd5ae12c8b7b7534a22d0a1eb93cfffc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhHslQCRBK7hj4Ov3rIwAAIxQIAHc/i8nsrqYsxvLCfzQ6Jxhx\nGCr42vnqkaV6VMoqO0UgWOxI2QvFIg2aZPKzo6+4kwGrT537TSaEgCPJZwU5JSRe\nzHGAxEKxgUUBBi+33hQnjUxnqwi09ufCmti6XrxUjy3IyMZ0vqIfk4uo2uz9u9z9\nrG2Zyd5rNnMjFlM+fE79Yii8vpAW2MjRvP3O7MPemmHvixIY368uhTLR62tBadBr\n0V2/P/g+ZXhAyhFeqrv2C5+ZFPuvPne1zt3TKFTVciuGG2yN6ZhY01+ca6t0s3rW\nvngWoIFBNTe2b7jZcrbaecTxlVAFujrsdgyaHhKrBYjHZAYkEpCuvRVH/8TnXoQ=\n=ghMd\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 28b1663704ac56d7de4c52487ffadc98aa1c48ea\nparent ae27b9875e7125ee89a8e24a05a3a5c04454e06f\nauthor brharrington <brharrington@gmail.com> 1629407568 -0500\ncommitter GitHub <noreply@github.com> 1629407568 -0500\n\nmore efficient empty check for hash map (#1330)\n\nUpdates the SmallHashMap implementation to override\r\nthe `isEmpty` method with an efficient check. The\r\ndefault that is inherited will allocate an iterator."
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/49716308fd5ae12c8b7b7534a22d0a1eb93cfffc",
+    "html_url": "https://github.com/Netflix/atlas/commit/49716308fd5ae12c8b7b7534a22d0a1eb93cfffc",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/49716308fd5ae12c8b7b7534a22d0a1eb93cfffc/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ae27b9875e7125ee89a8e24a05a3a5c04454e06f",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/ae27b9875e7125ee89a8e24a05a3a5c04454e06f",
+        "html_url": "https://github.com/Netflix/atlas/commit/ae27b9875e7125ee89a8e24a05a3a5c04454e06f"
+      }
+    ]
+  },
+  {
+    "sha": "ae27b9875e7125ee89a8e24a05a3a5c04454e06f",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6YWUyN2I5ODc1ZTcxMjVlZTg5YThlMjRhMDVhM2E1YzA0NDU0ZTA2Zg==",
+    "commit": {
+      "author": {
+        "name": "brharrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:30:24Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-16T19:30:24Z"
+      },
+      "message": "update dependencies (#1329)",
+      "tree": {
+        "sha": "7696273dd14285fd22a6637fc845126c9e15498f",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/7696273dd14285fd22a6637fc845126c9e15498f"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/ae27b9875e7125ee89a8e24a05a3a5c04454e06f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhGrzQCRBK7hj4Ov3rIwAAgZgIAKyX2IKfaB7fT6/r+3rGBRRS\ncsm29b1mEL0Zg041cQMny/m0YFa442Bj8+aarBNiMIYMg/95A7/MyM+SuKRzRFyf\nxxiKwb7yqEuVW+Bb64TtsCo8SZeeVeiqL7QPQYLSBBv8ZIDwv2JWLCe6YGZTd2r+\nPO7XyOe+WAp0UzvDBdannTIQD+KvkKrbqVhcZOyXluKXRcofCuGsGXrlconRA/su\naL+ImMK5UQnvZnPqtjxm3mZoBw8y5GvFSTmdMjZCyjJMzRCgU37dZzeax0V5Ehhr\nJdBUx11871po+c5N80o1E2gaATVDKXe6mzYbFRQliEXIHxf+Z+asLRlQg72mmes=\n=H0b1\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7696273dd14285fd22a6637fc845126c9e15498f\nparent 02c21ff3e6234da95ed17b76f599dd5642550265\nparent 4f20d7380706c126759a39d215f6a250ccf243c3\nauthor brharrington <brharrington@gmail.com> 1629142224 -0500\ncommitter GitHub <noreply@github.com> 1629142224 -0500\n\nupdate dependencies (#1329)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/ae27b9875e7125ee89a8e24a05a3a5c04454e06f",
+    "html_url": "https://github.com/Netflix/atlas/commit/ae27b9875e7125ee89a8e24a05a3a5c04454e06f",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/ae27b9875e7125ee89a8e24a05a3a5c04454e06f/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "02c21ff3e6234da95ed17b76f599dd5642550265",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/02c21ff3e6234da95ed17b76f599dd5642550265",
+        "html_url": "https://github.com/Netflix/atlas/commit/02c21ff3e6234da95ed17b76f599dd5642550265"
+      },
+      {
+        "sha": "4f20d7380706c126759a39d215f6a250ccf243c3",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/4f20d7380706c126759a39d215f6a250ccf243c3",
+        "html_url": "https://github.com/Netflix/atlas/commit/4f20d7380706c126759a39d215f6a250ccf243c3"
+      }
+    ]
+  },
+  {
+    "sha": "4f20d7380706c126759a39d215f6a250ccf243c3",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6NGYyMGQ3MzgwNzA2YzEyNjc1OWEzOWQyMTVmNmEyNTBjY2YyNDNjMw==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:22:13Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:22:13Z"
+      },
+      "message": "sbt-updates 0.6.0",
+      "tree": {
+        "sha": "7696273dd14285fd22a6637fc845126c9e15498f",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/7696273dd14285fd22a6637fc845126c9e15498f"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/4f20d7380706c126759a39d215f6a250ccf243c3",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/4f20d7380706c126759a39d215f6a250ccf243c3",
+    "html_url": "https://github.com/Netflix/atlas/commit/4f20d7380706c126759a39d215f6a250ccf243c3",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/4f20d7380706c126759a39d215f6a250ccf243c3/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8822aedfbc608fcf8d09dd79f4f1e3deed3dff59",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/8822aedfbc608fcf8d09dd79f4f1e3deed3dff59",
+        "html_url": "https://github.com/Netflix/atlas/commit/8822aedfbc608fcf8d09dd79f4f1e3deed3dff59"
+      }
+    ]
+  },
+  {
+    "sha": "8822aedfbc608fcf8d09dd79f4f1e3deed3dff59",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6ODgyMmFlZGZiYzYwOGZjZjhkMDlkZDc5ZjRmMWUzZGVlZDNkZmY1OQ==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:20:32Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:20:32Z"
+      },
+      "message": "sbt 1.5.5",
+      "tree": {
+        "sha": "0fa4509730002c57b749247ea5429e4c98212194",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/0fa4509730002c57b749247ea5429e4c98212194"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/8822aedfbc608fcf8d09dd79f4f1e3deed3dff59",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/8822aedfbc608fcf8d09dd79f4f1e3deed3dff59",
+    "html_url": "https://github.com/Netflix/atlas/commit/8822aedfbc608fcf8d09dd79f4f1e3deed3dff59",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/8822aedfbc608fcf8d09dd79f4f1e3deed3dff59/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3bd0e75e4520b691e6a217324bbd69bdeff54f83",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/3bd0e75e4520b691e6a217324bbd69bdeff54f83",
+        "html_url": "https://github.com/Netflix/atlas/commit/3bd0e75e4520b691e6a217324bbd69bdeff54f83"
+      }
+    ]
+  },
+  {
+    "sha": "3bd0e75e4520b691e6a217324bbd69bdeff54f83",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6M2JkMGU3NWU0NTIwYjY5MWU2YTIxNzMyNGJiZDY5YmRlZmY1NGY4Mw==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:17:06Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:17:06Z"
+      },
+      "message": "RoaringBitmap 0.9.16",
+      "tree": {
+        "sha": "964f08977ddfb1af64a0d6e906081dd70dbb792d",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/964f08977ddfb1af64a0d6e906081dd70dbb792d"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/3bd0e75e4520b691e6a217324bbd69bdeff54f83",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/3bd0e75e4520b691e6a217324bbd69bdeff54f83",
+    "html_url": "https://github.com/Netflix/atlas/commit/3bd0e75e4520b691e6a217324bbd69bdeff54f83",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/3bd0e75e4520b691e6a217324bbd69bdeff54f83/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "56adc7f626b06416b753536a3ec8366269ef4c61",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/56adc7f626b06416b753536a3ec8366269ef4c61",
+        "html_url": "https://github.com/Netflix/atlas/commit/56adc7f626b06416b753536a3ec8366269ef4c61"
+      }
+    ]
+  },
+  {
+    "sha": "56adc7f626b06416b753536a3ec8366269ef4c61",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6NTZhZGM3ZjYyNmIwNjQxNmI3NTM1MzZhM2VjODM2NjI2OWVmNGM2MQ==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:15:09Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:15:09Z"
+      },
+      "message": "equalsverifier 3.7.1",
+      "tree": {
+        "sha": "ff671d27bcebafe8a0615034a13da68f27eaca82",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/ff671d27bcebafe8a0615034a13da68f27eaca82"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/56adc7f626b06416b753536a3ec8366269ef4c61",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/56adc7f626b06416b753536a3ec8366269ef4c61",
+    "html_url": "https://github.com/Netflix/atlas/commit/56adc7f626b06416b753536a3ec8366269ef4c61",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/56adc7f626b06416b753536a3ec8366269ef4c61/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "82b6488cab4eefb1f8912caab9c0b29d97608e2b",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/82b6488cab4eefb1f8912caab9c0b29d97608e2b",
+        "html_url": "https://github.com/Netflix/atlas/commit/82b6488cab4eefb1f8912caab9c0b29d97608e2b"
+      }
+    ]
+  },
+  {
+    "sha": "82b6488cab4eefb1f8912caab9c0b29d97608e2b",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6ODJiNjQ4OGNhYjRlZWZiMWY4OTEyY2FhYjljMGIyOWQ5NzYwOGUyYg==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:13:50Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:13:50Z"
+      },
+      "message": "akka-http 10.2.6",
+      "tree": {
+        "sha": "7b9c1c4fd8b9f20abab2736ff6b2ea0237f33a33",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/7b9c1c4fd8b9f20abab2736ff6b2ea0237f33a33"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/82b6488cab4eefb1f8912caab9c0b29d97608e2b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/82b6488cab4eefb1f8912caab9c0b29d97608e2b",
+    "html_url": "https://github.com/Netflix/atlas/commit/82b6488cab4eefb1f8912caab9c0b29d97608e2b",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/82b6488cab4eefb1f8912caab9c0b29d97608e2b/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8d944a70a97186a41965b908a1669bec8828595b",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/8d944a70a97186a41965b908a1669bec8828595b",
+        "html_url": "https://github.com/Netflix/atlas/commit/8d944a70a97186a41965b908a1669bec8828595b"
+      }
+    ]
+  },
+  {
+    "sha": "8d944a70a97186a41965b908a1669bec8828595b",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6OGQ5NDRhNzBhOTcxODZhNDE5NjViOTA4YTE2NjliZWM4ODI4NTk1Yg==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:12:43Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:12:43Z"
+      },
+      "message": "iep 3.0.3",
+      "tree": {
+        "sha": "b136b22354cb475859fc9422b168fc962961b074",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/b136b22354cb475859fc9422b168fc962961b074"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/8d944a70a97186a41965b908a1669bec8828595b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/8d944a70a97186a41965b908a1669bec8828595b",
+    "html_url": "https://github.com/Netflix/atlas/commit/8d944a70a97186a41965b908a1669bec8828595b",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/8d944a70a97186a41965b908a1669bec8828595b/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "acabe23785976456d521fb8c77f0d790a21010a4",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/acabe23785976456d521fb8c77f0d790a21010a4",
+        "html_url": "https://github.com/Netflix/atlas/commit/acabe23785976456d521fb8c77f0d790a21010a4"
+      }
+    ]
+  },
+  {
+    "sha": "acabe23785976456d521fb8c77f0d790a21010a4",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6YWNhYmUyMzc4NTk3NjQ1NmQ1MjFmYjhjNzdmMGQ3OTBhMjEwMTBhNA==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:11:44Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:11:44Z"
+      },
+      "message": "spectator 0.133.0",
+      "tree": {
+        "sha": "ac1440e13ce5e8860326255ba63e8aa26a109cc8",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/ac1440e13ce5e8860326255ba63e8aa26a109cc8"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/acabe23785976456d521fb8c77f0d790a21010a4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/acabe23785976456d521fb8c77f0d790a21010a4",
+    "html_url": "https://github.com/Netflix/atlas/commit/acabe23785976456d521fb8c77f0d790a21010a4",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/acabe23785976456d521fb8c77f0d790a21010a4/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "16302f17d6d9c8df04e2dc9760e310fce7b3780d",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/16302f17d6d9c8df04e2dc9760e310fce7b3780d",
+        "html_url": "https://github.com/Netflix/atlas/commit/16302f17d6d9c8df04e2dc9760e310fce7b3780d"
+      }
+    ]
+  },
+  {
+    "sha": "16302f17d6d9c8df04e2dc9760e310fce7b3780d",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6MTYzMDJmMTdkNmQ5YzhkZjA0ZTJkYzk3NjBlMzEwZmNlN2IzNzgwZA==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:09:54Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-08-16T19:09:54Z"
+      },
+      "message": "slf4j 1.7.32",
+      "tree": {
+        "sha": "1cf56f18743d7cace4dde2b6a4cac2193128dd96",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/1cf56f18743d7cace4dde2b6a4cac2193128dd96"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/16302f17d6d9c8df04e2dc9760e310fce7b3780d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/16302f17d6d9c8df04e2dc9760e310fce7b3780d",
+    "html_url": "https://github.com/Netflix/atlas/commit/16302f17d6d9c8df04e2dc9760e310fce7b3780d",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/16302f17d6d9c8df04e2dc9760e310fce7b3780d/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "02c21ff3e6234da95ed17b76f599dd5642550265",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/02c21ff3e6234da95ed17b76f599dd5642550265",
+        "html_url": "https://github.com/Netflix/atlas/commit/02c21ff3e6234da95ed17b76f599dd5642550265"
+      }
+    ]
+  },
+  {
+    "sha": "02c21ff3e6234da95ed17b76f599dd5642550265",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6MDJjMjFmZjNlNjIzNGRhOTVlZDE3Yjc2ZjU5OWRkNTY0MjU1MDI2NQ==",
+    "commit": {
+      "author": {
+        "name": "Matthew Johnson",
+        "email": "mjjohnson33@gmail.com",
+        "date": "2021-07-27T20:52:53Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-27T20:52:53Z"
+      },
+      "message": "limit gh-actions to the main repo (#1328)\n\nPreviously, when maintaining a fork of this repo, merging updates from\r\nthe upstream would trigger GitHub actions for the snapshot workflow,\r\nwhich failed because the secrets are missing. We do not want forks to\r\nrun either the snapshot or the release actions.",
+      "tree": {
+        "sha": "ee6728fb8c186b786b6e4a84f03b5c2ba3f0f9b8",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/ee6728fb8c186b786b6e4a84f03b5c2ba3f0f9b8"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/02c21ff3e6234da95ed17b76f599dd5642550265",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhAHIlCRBK7hj4Ov3rIwAAJqMIACXBdCKz0+b4m631XQlw2Epa\npSgH04HT6B8XtMIOMpmuWLJBc0Zc70oE8cHxxMnrmP9LCuutdMknMrGu5qxp7OnQ\n8Y/EPhSn4JHbSseNysamJOACKqePPfvtUdvKcdrgGycQWY++H95CjbG0wL6wuKJm\nUyXCUg7ehfKV7F79PBPgt3LiAC4YkgflAdUPgzpSa6JHZZaCqzWbeNa920umw+Z6\nGWbQ1dbaeHqFg1vmHg2AzGBdouoXSksewefRrawykZ4V1DvzdkvAOizqgfQwlmFl\nuY739/gUFgBo9cxY2TbWm2m60dKkRjbQPr56k095KDCUpU7zWbRd7qHhPPAwIKk=\n=hEou\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ee6728fb8c186b786b6e4a84f03b5c2ba3f0f9b8\nparent c369bf29853f84abed59d963633f1bd0e500ecd7\nauthor Matthew Johnson <mjjohnson33@gmail.com> 1627419173 -0700\ncommitter GitHub <noreply@github.com> 1627419173 -0500\n\nlimit gh-actions to the main repo (#1328)\n\nPreviously, when maintaining a fork of this repo, merging updates from\r\nthe upstream would trigger GitHub actions for the snapshot workflow,\r\nwhich failed because the secrets are missing. We do not want forks to\r\nrun either the snapshot or the release actions."
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/02c21ff3e6234da95ed17b76f599dd5642550265",
+    "html_url": "https://github.com/Netflix/atlas/commit/02c21ff3e6234da95ed17b76f599dd5642550265",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/02c21ff3e6234da95ed17b76f599dd5642550265/comments",
+    "author": {
+      "login": "copperlight",
+      "id": 1192501,
+      "node_id": "MDQ6VXNlcjExOTI1MDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1192501?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/copperlight",
+      "html_url": "https://github.com/copperlight",
+      "followers_url": "https://api.github.com/users/copperlight/followers",
+      "following_url": "https://api.github.com/users/copperlight/following{/other_user}",
+      "gists_url": "https://api.github.com/users/copperlight/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/copperlight/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/copperlight/subscriptions",
+      "organizations_url": "https://api.github.com/users/copperlight/orgs",
+      "repos_url": "https://api.github.com/users/copperlight/repos",
+      "events_url": "https://api.github.com/users/copperlight/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/copperlight/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c369bf29853f84abed59d963633f1bd0e500ecd7",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/c369bf29853f84abed59d963633f1bd0e500ecd7",
+        "html_url": "https://github.com/Netflix/atlas/commit/c369bf29853f84abed59d963633f1bd0e500ecd7"
+      }
+    ]
+  },
+  {
+    "sha": "c369bf29853f84abed59d963633f1bd0e500ecd7",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6YzM2OWJmMjk4NTNmODRhYmVkNTlkOTYzNjMzZjFiZDBlNTAwZWNkNw==",
+    "commit": {
+      "author": {
+        "name": "brharrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-15T17:51:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-15T17:51:46Z"
+      },
+      "message": "remove cloudwatch projects (#1327)\n\nThe cloudwatch polling logic has been moved to\r\nthe iep-apps repo.",
+      "tree": {
+        "sha": "049a87385b01428e5e04e852312180aaac26b2ce",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/049a87385b01428e5e04e852312180aaac26b2ce"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/c369bf29853f84abed59d963633f1bd0e500ecd7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg8HWyCRBK7hj4Ov3rIwAA3NkIAA8P+4psiaID8H/PNQLAg86p\nA1pft3x1QfrTggP2kph+VGBwwvmKgG/qkW2tjYLHrcYxEM564tLkiKmCGn0w0vPu\n2LKdSRzaP394qA9yr9MDd7RLu19IAQpPUJHx9Tbfru4Qgx8cRqsGoknHUYhV9p5i\n8ff7Q17HcuFjCIdvYUfhElCUX8Gk73+iGNb5JL8QlG4aOXKiDklOHpJiJ7JDb+JP\n1xpvzstq5dZO0FLGd4RHhWLZ8fXeGiLOH8KDMQzGtQ9yNv6MtdH85rOGhPmnOeYC\nEEiX7qH3cFA9CF2lqI5xcAxSSPWlMQ6vGMCpXlksFkJu8QxfO62BnXeemTDF3gI=\n=IH4C\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 049a87385b01428e5e04e852312180aaac26b2ce\nparent 8735c5a91e415d6b4da629d254a6a323339e28c7\nauthor brharrington <brharrington@gmail.com> 1626371506 -0500\ncommitter GitHub <noreply@github.com> 1626371506 -0500\n\nremove cloudwatch projects (#1327)\n\nThe cloudwatch polling logic has been moved to\r\nthe iep-apps repo."
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/c369bf29853f84abed59d963633f1bd0e500ecd7",
+    "html_url": "https://github.com/Netflix/atlas/commit/c369bf29853f84abed59d963633f1bd0e500ecd7",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/c369bf29853f84abed59d963633f1bd0e500ecd7/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8735c5a91e415d6b4da629d254a6a323339e28c7",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/8735c5a91e415d6b4da629d254a6a323339e28c7",
+        "html_url": "https://github.com/Netflix/atlas/commit/8735c5a91e415d6b4da629d254a6a323339e28c7"
+      }
+    ]
+  },
+  {
+    "sha": "8735c5a91e415d6b4da629d254a6a323339e28c7",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6ODczNWM1YTkxZTQxNWQ2YjRkYTYyOWQyNTRhNmEzMjMzMzllMjhjNw==",
+    "commit": {
+      "author": {
+        "name": "brharrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:59:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-09T17:59:45Z"
+      },
+      "message": "update dependencies (#1326)",
+      "tree": {
+        "sha": "b15b23f50e160efd0c0f71fbf65b6aa9117793b2",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/b15b23f50e160efd0c0f71fbf65b6aa9117793b2"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/8735c5a91e415d6b4da629d254a6a323339e28c7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg6I6RCRBK7hj4Ov3rIwAA864IAGP+4ngnceBxVKN7EKMiN0Wk\nXOqMLp6vJGDqIlXWNyCGWXd6p60Ab72cgIuM2q0yRdpRjI5DoF4Dee67k7hbY1Fe\n5I8C5h6KIvczApbiwxGbPCtrMbT3dO7dyptcjIroJNOrYnplVqTnYy6lrn/leA+S\nbvpUGe/IMatSM4iOk6ZB4mVM/zcpsC4ZX1O7kkBrz7QXOL3ddKLX4M1tA1f3aqH6\nX3wsyROM/lbT8OKoyPfUOIqOQc/7QqB7LB949rCAlPHs0MRJlaL17PPhLLytzhEZ\ndIJPUwTt5o7+zYO4Y5/QMXmv9RRfMC3pW85yPoXl/hnRBLOO2AlVptWepIEYmrg=\n=yvx3\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b15b23f50e160efd0c0f71fbf65b6aa9117793b2\nparent 44ab4423577c50a29e975f5420efbd72c8c4920c\nparent d6f15a7708d84ff9f9264d1cffd2408870d1120d\nauthor brharrington <brharrington@gmail.com> 1625853585 -0500\ncommitter GitHub <noreply@github.com> 1625853585 -0500\n\nupdate dependencies (#1326)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/8735c5a91e415d6b4da629d254a6a323339e28c7",
+    "html_url": "https://github.com/Netflix/atlas/commit/8735c5a91e415d6b4da629d254a6a323339e28c7",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/8735c5a91e415d6b4da629d254a6a323339e28c7/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "44ab4423577c50a29e975f5420efbd72c8c4920c",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/44ab4423577c50a29e975f5420efbd72c8c4920c",
+        "html_url": "https://github.com/Netflix/atlas/commit/44ab4423577c50a29e975f5420efbd72c8c4920c"
+      },
+      {
+        "sha": "d6f15a7708d84ff9f9264d1cffd2408870d1120d",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/d6f15a7708d84ff9f9264d1cffd2408870d1120d",
+        "html_url": "https://github.com/Netflix/atlas/commit/d6f15a7708d84ff9f9264d1cffd2408870d1120d"
+      }
+    ]
+  },
+  {
+    "sha": "d6f15a7708d84ff9f9264d1cffd2408870d1120d",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6ZDZmMTVhNzcwOGQ4NGZmOWY5MjY0ZDFjZmZkMjQwODg3MGQxMTIwZA==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:48:09Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:48:09Z"
+      },
+      "message": "sbt-release 1.1.0",
+      "tree": {
+        "sha": "b15b23f50e160efd0c0f71fbf65b6aa9117793b2",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/b15b23f50e160efd0c0f71fbf65b6aa9117793b2"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/d6f15a7708d84ff9f9264d1cffd2408870d1120d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/d6f15a7708d84ff9f9264d1cffd2408870d1120d",
+    "html_url": "https://github.com/Netflix/atlas/commit/d6f15a7708d84ff9f9264d1cffd2408870d1120d",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/d6f15a7708d84ff9f9264d1cffd2408870d1120d/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "012e655deb2e45537986c26633e9819374268b77",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/012e655deb2e45537986c26633e9819374268b77",
+        "html_url": "https://github.com/Netflix/atlas/commit/012e655deb2e45537986c26633e9819374268b77"
+      }
+    ]
+  },
+  {
+    "sha": "012e655deb2e45537986c26633e9819374268b77",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6MDEyZTY1NWRlYjJlNDU1Mzc5ODZjMjY2MzNlOTgxOTM3NDI2OGI3Nw==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:47:24Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:47:24Z"
+      },
+      "message": "sbt 1.5.4",
+      "tree": {
+        "sha": "673181193856aaa666f1c6dfa254ed5613f362f7",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/673181193856aaa666f1c6dfa254ed5613f362f7"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/012e655deb2e45537986c26633e9819374268b77",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/012e655deb2e45537986c26633e9819374268b77",
+    "html_url": "https://github.com/Netflix/atlas/commit/012e655deb2e45537986c26633e9819374268b77",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/012e655deb2e45537986c26633e9819374268b77/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3181fd720f50916f6c6efd97ab830783a6bf7503",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/3181fd720f50916f6c6efd97ab830783a6bf7503",
+        "html_url": "https://github.com/Netflix/atlas/commit/3181fd720f50916f6c6efd97ab830783a6bf7503"
+      }
+    ]
+  },
+  {
+    "sha": "3181fd720f50916f6c6efd97ab830783a6bf7503",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6MzE4MWZkNzIwZjUwOTE2ZjZjNmVmZDk3YWI4MzA3ODNhNmJmNzUwMw==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:46:47Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:46:47Z"
+      },
+      "message": "RoaringBitmap 0.9.15",
+      "tree": {
+        "sha": "61ee5bdb31ad91122cf6e9defcce8b78cfcccb8f",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/61ee5bdb31ad91122cf6e9defcce8b78cfcccb8f"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/3181fd720f50916f6c6efd97ab830783a6bf7503",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/3181fd720f50916f6c6efd97ab830783a6bf7503",
+    "html_url": "https://github.com/Netflix/atlas/commit/3181fd720f50916f6c6efd97ab830783a6bf7503",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/3181fd720f50916f6c6efd97ab830783a6bf7503/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e3eb55e5ec984675fa216f94cefc2741fa08e5fb",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/e3eb55e5ec984675fa216f94cefc2741fa08e5fb",
+        "html_url": "https://github.com/Netflix/atlas/commit/e3eb55e5ec984675fa216f94cefc2741fa08e5fb"
+      }
+    ]
+  },
+  {
+    "sha": "e3eb55e5ec984675fa216f94cefc2741fa08e5fb",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6ZTNlYjU1ZTVlYzk4NDY3NWZhMjE2Zjk0Y2VmYzI3NDFmYTA4ZTVmYg==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:39:35Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:39:35Z"
+      },
+      "message": "equalsverifier 3.7",
+      "tree": {
+        "sha": "c7f6fb8f30767fba87d2ffd7c44c43cfbd040405",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/c7f6fb8f30767fba87d2ffd7c44c43cfbd040405"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/e3eb55e5ec984675fa216f94cefc2741fa08e5fb",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/e3eb55e5ec984675fa216f94cefc2741fa08e5fb",
+    "html_url": "https://github.com/Netflix/atlas/commit/e3eb55e5ec984675fa216f94cefc2741fa08e5fb",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/e3eb55e5ec984675fa216f94cefc2741fa08e5fb/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b2c47569bccdc06d7d701a60ac27d81724a6d02b",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/b2c47569bccdc06d7d701a60ac27d81724a6d02b",
+        "html_url": "https://github.com/Netflix/atlas/commit/b2c47569bccdc06d7d701a60ac27d81724a6d02b"
+      }
+    ]
+  },
+  {
+    "sha": "b2c47569bccdc06d7d701a60ac27d81724a6d02b",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6YjJjNDc1NjliY2NkYzA2ZDdkNzAxYTYwYWMyN2Q4MTcyNGE2ZDAyYg==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:38:16Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:38:16Z"
+      },
+      "message": "slf4j 1.7.31",
+      "tree": {
+        "sha": "4e958c30a364c97a76e14213577b5c4ebe19b0bd",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/4e958c30a364c97a76e14213577b5c4ebe19b0bd"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/b2c47569bccdc06d7d701a60ac27d81724a6d02b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/b2c47569bccdc06d7d701a60ac27d81724a6d02b",
+    "html_url": "https://github.com/Netflix/atlas/commit/b2c47569bccdc06d7d701a60ac27d81724a6d02b",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/b2c47569bccdc06d7d701a60ac27d81724a6d02b/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "152e69316f172087530944269814e449729e968f",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/152e69316f172087530944269814e449729e968f",
+        "html_url": "https://github.com/Netflix/atlas/commit/152e69316f172087530944269814e449729e968f"
+      }
+    ]
+  },
+  {
+    "sha": "152e69316f172087530944269814e449729e968f",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6MTUyZTY5MzE2ZjE3MjA4NzUzMDk0NDI2OTgxNGU0NDk3MjllOTY4Zg==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:36:23Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T17:36:23Z"
+      },
+      "message": "scala-collection-compat 2.5.0",
+      "tree": {
+        "sha": "269fa8cce4784ced757d9308640b52c33e03e414",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/269fa8cce4784ced757d9308640b52c33e03e414"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/152e69316f172087530944269814e449729e968f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/152e69316f172087530944269814e449729e968f",
+    "html_url": "https://github.com/Netflix/atlas/commit/152e69316f172087530944269814e449729e968f",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/152e69316f172087530944269814e449729e968f/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "602e8753b177ab3bf5ef3b3096efaaf9cc28eca7",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/602e8753b177ab3bf5ef3b3096efaaf9cc28eca7",
+        "html_url": "https://github.com/Netflix/atlas/commit/602e8753b177ab3bf5ef3b3096efaaf9cc28eca7"
+      }
+    ]
+  },
+  {
+    "sha": "602e8753b177ab3bf5ef3b3096efaaf9cc28eca7",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6NjAyZTg3NTNiMTc3YWIzYmY1ZWYzYjMwOTZlZmFhZjljYzI4ZWNhNw==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T16:42:25Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T16:42:25Z"
+      },
+      "message": "scala-logging 3.9.4",
+      "tree": {
+        "sha": "5a7c48ccf287fa7cd8f5eb7c27f3cf10ea6e610c",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/5a7c48ccf287fa7cd8f5eb7c27f3cf10ea6e610c"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/602e8753b177ab3bf5ef3b3096efaaf9cc28eca7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/602e8753b177ab3bf5ef3b3096efaaf9cc28eca7",
+    "html_url": "https://github.com/Netflix/atlas/commit/602e8753b177ab3bf5ef3b3096efaaf9cc28eca7",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/602e8753b177ab3bf5ef3b3096efaaf9cc28eca7/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "18e2023e9d8dcf9c0fab58da52dae63a2c5c94fc",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/18e2023e9d8dcf9c0fab58da52dae63a2c5c94fc",
+        "html_url": "https://github.com/Netflix/atlas/commit/18e2023e9d8dcf9c0fab58da52dae63a2c5c94fc"
+      }
+    ]
+  },
+  {
+    "sha": "18e2023e9d8dcf9c0fab58da52dae63a2c5c94fc",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6MThlMjAyM2U5ZDhkY2Y5YzBmYWI1OGRhNTJkYWU2M2EyYzVjOTRmYw==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T16:41:24Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T16:41:24Z"
+      },
+      "message": "iep 3.0.2",
+      "tree": {
+        "sha": "7ce59e79eb0d19e770565ee4eb3874c7554063eb",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/7ce59e79eb0d19e770565ee4eb3874c7554063eb"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/18e2023e9d8dcf9c0fab58da52dae63a2c5c94fc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/18e2023e9d8dcf9c0fab58da52dae63a2c5c94fc",
+    "html_url": "https://github.com/Netflix/atlas/commit/18e2023e9d8dcf9c0fab58da52dae63a2c5c94fc",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/18e2023e9d8dcf9c0fab58da52dae63a2c5c94fc/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "87f08f4018455063f6851993dae9e91e817df7fc",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/87f08f4018455063f6851993dae9e91e817df7fc",
+        "html_url": "https://github.com/Netflix/atlas/commit/87f08f4018455063f6851993dae9e91e817df7fc"
+      }
+    ]
+  },
+  {
+    "sha": "87f08f4018455063f6851993dae9e91e817df7fc",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6ODdmMDhmNDAxODQ1NTA2M2Y2ODUxOTkzZGFlOWU5MWU4MTdkZjdmYw==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T16:33:17Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T16:33:17Z"
+      },
+      "message": "spectator 0.132.0",
+      "tree": {
+        "sha": "8901a800c5d895b8f323e4a857031eb3ff2b9401",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/8901a800c5d895b8f323e4a857031eb3ff2b9401"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/87f08f4018455063f6851993dae9e91e817df7fc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/87f08f4018455063f6851993dae9e91e817df7fc",
+    "html_url": "https://github.com/Netflix/atlas/commit/87f08f4018455063f6851993dae9e91e817df7fc",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/87f08f4018455063f6851993dae9e91e817df7fc/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "535fbef45fd550d4b405e9646df53517fd69fc4a",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/535fbef45fd550d4b405e9646df53517fd69fc4a",
+        "html_url": "https://github.com/Netflix/atlas/commit/535fbef45fd550d4b405e9646df53517fd69fc4a"
+      }
+    ]
+  },
+  {
+    "sha": "535fbef45fd550d4b405e9646df53517fd69fc4a",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6NTM1ZmJlZjQ1ZmQ1NTBkNGI0MDVlOTY0NmRmNTM1MTdmZDY5ZmM0YQ==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T16:32:32Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T16:32:32Z"
+      },
+      "message": "jackson 2.12.4",
+      "tree": {
+        "sha": "cf47d593be7aa6270690af9f6b0104340575999b",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/cf47d593be7aa6270690af9f6b0104340575999b"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/535fbef45fd550d4b405e9646df53517fd69fc4a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/535fbef45fd550d4b405e9646df53517fd69fc4a",
+    "html_url": "https://github.com/Netflix/atlas/commit/535fbef45fd550d4b405e9646df53517fd69fc4a",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/535fbef45fd550d4b405e9646df53517fd69fc4a/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "72dfc52755b5a2d70471759666268dc7bb771ab1",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/72dfc52755b5a2d70471759666268dc7bb771ab1",
+        "html_url": "https://github.com/Netflix/atlas/commit/72dfc52755b5a2d70471759666268dc7bb771ab1"
+      }
+    ]
+  },
+  {
+    "sha": "72dfc52755b5a2d70471759666268dc7bb771ab1",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6NzJkZmM1Mjc1NWI1YTJkNzA0NzE3NTk2NjYyNjhkYzdiYjc3MWFiMQ==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T16:31:01Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T16:31:01Z"
+      },
+      "message": "caffeine 2.9.2",
+      "tree": {
+        "sha": "c9e88240c12345ef75defad76da9c4d86b3cef9a",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/c9e88240c12345ef75defad76da9c4d86b3cef9a"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/72dfc52755b5a2d70471759666268dc7bb771ab1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/72dfc52755b5a2d70471759666268dc7bb771ab1",
+    "html_url": "https://github.com/Netflix/atlas/commit/72dfc52755b5a2d70471759666268dc7bb771ab1",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/72dfc52755b5a2d70471759666268dc7bb771ab1/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4a480e34d44fbd08fb718bf33dea6fb291fd0cef",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/4a480e34d44fbd08fb718bf33dea6fb291fd0cef",
+        "html_url": "https://github.com/Netflix/atlas/commit/4a480e34d44fbd08fb718bf33dea6fb291fd0cef"
+      }
+    ]
+  },
+  {
+    "sha": "4a480e34d44fbd08fb718bf33dea6fb291fd0cef",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6NGE0ODBlMzRkNDRmYmQwOGZiNzE4YmYzM2RlYTZmYjI5MWZkMGNlZg==",
+    "commit": {
+      "author": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T16:29:00Z"
+      },
+      "committer": {
+        "name": "Brian Harrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-07-09T16:29:00Z"
+      },
+      "message": "aws-sdk-java-v2 2.16.92",
+      "tree": {
+        "sha": "d54cc85c4c77c8b660f0ff28cc4a9d3260a06591",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/d54cc85c4c77c8b660f0ff28cc4a9d3260a06591"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/4a480e34d44fbd08fb718bf33dea6fb291fd0cef",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/4a480e34d44fbd08fb718bf33dea6fb291fd0cef",
+    "html_url": "https://github.com/Netflix/atlas/commit/4a480e34d44fbd08fb718bf33dea6fb291fd0cef",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/4a480e34d44fbd08fb718bf33dea6fb291fd0cef/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "44ab4423577c50a29e975f5420efbd72c8c4920c",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/44ab4423577c50a29e975f5420efbd72c8c4920c",
+        "html_url": "https://github.com/Netflix/atlas/commit/44ab4423577c50a29e975f5420efbd72c8c4920c"
+      }
+    ]
+  },
+  {
+    "sha": "44ab4423577c50a29e975f5420efbd72c8c4920c",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6NDRhYjQ0MjM1NzdjNTBhMjllOTc1ZjU0MjBlZmJkNzJjOGM0OTIwYw==",
+    "commit": {
+      "author": {
+        "name": "brharrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-06-10T14:45:39Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-06-10T14:45:39Z"
+      },
+      "message": "reduce array allocations for encoding batch (#1325)\n\nUse `fromArrayUnsafe` to avoid copying the byte array used\r\nby the ByteString object.",
+      "tree": {
+        "sha": "3768332d985ccba15ed998dbd3e33011586fa9f9",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/3768332d985ccba15ed998dbd3e33011586fa9f9"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/44ab4423577c50a29e975f5420efbd72c8c4920c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgwiWTCRBK7hj4Ov3rIwAA1/QIAFGzyC98Cw7CWYW/TRDjn/Ut\nNV3aqN+qPCqYeYM0IQfs3cM5QUIK4XId6ZlBHSFpE4KmXBAMhUvJ81IGHfVkZ7SL\nKdKWfPgZdrkWfB7X2pOfZei1xIxZA1jS4zNFZXbRAcsBhE1JIqwV9Tmrthoa7D4e\nl4RVG4iGxa0K93w8WVQAettxljdMOWODs2x6EulwURduN4z4zNdfoNZbyrtbr+Tz\n8nk0wKz4V1A+NqlckhQBLdDnxRZXfzwu0zS8/rxT2OgPJQor4FtkY+N4NXdPq4Mr\nS7i2DtNvkaw+wjhFAx+7YmZa34JqppAnZh4lh3r25nTsr3FM3CRQ8g1nn/Ttwto=\n=BDMy\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3768332d985ccba15ed998dbd3e33011586fa9f9\nparent 03593c99d15f3049ba87328392e389bc99716a47\nauthor brharrington <brharrington@gmail.com> 1623336339 -0500\ncommitter GitHub <noreply@github.com> 1623336339 -0500\n\nreduce array allocations for encoding batch (#1325)\n\nUse `fromArrayUnsafe` to avoid copying the byte array used\r\nby the ByteString object."
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/44ab4423577c50a29e975f5420efbd72c8c4920c",
+    "html_url": "https://github.com/Netflix/atlas/commit/44ab4423577c50a29e975f5420efbd72c8c4920c",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/44ab4423577c50a29e975f5420efbd72c8c4920c/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "03593c99d15f3049ba87328392e389bc99716a47",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/03593c99d15f3049ba87328392e389bc99716a47",
+        "html_url": "https://github.com/Netflix/atlas/commit/03593c99d15f3049ba87328392e389bc99716a47"
+      }
+    ]
+  },
+  {
+    "sha": "03593c99d15f3049ba87328392e389bc99716a47",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6MDM1OTNjOTlkMTVmMzA0OWJhODczMjgzOTJlMzg5YmM5OTcxNmE0Nw==",
+    "commit": {
+      "author": {
+        "name": "Matthew Johnson",
+        "email": "mjjohnson33@gmail.com",
+        "date": "2021-06-09T21:20:28Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-06-09T21:20:28Z"
+      },
+      "message": "add nlb cloudwatch metrics (#1324)\n\nhttps://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-cloudwatch-metrics.html\r\n\r\n* ProcessedPackets, statistic: sum\r\n* PeakPacketsPerSecond, statistic: max\r\n* PacketsPerSecondCapacity,  statistic: min",
+      "tree": {
+        "sha": "9968974f006993c84d3d98e999ccfd065816699c",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/9968974f006993c84d3d98e999ccfd065816699c"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/03593c99d15f3049ba87328392e389bc99716a47",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgwTCcCRBK7hj4Ov3rIwAAFskIABRJhgbruUxrNKjvTW8dbp8C\nTsEQ7kZ19T+7FzZGnjBfyeMuaaE4ac7tKxo8nTgJsHUqNQzgG9Xb2AsR3oZMsISs\nl+TZ7CO33OZs5oiEu8EdasX4Pha4aEOYCnmqOX5bj/PkTz3ZI8NnMstwP6k/SZDQ\nZPB9LdkvxE0RMi0uTp+CGhSeat1Q0DwgiR0nIH+GxEqJt3RyKmdLaJ7TSD5YcOHZ\nTSIhjAFuCpVrW5VPIFogRaRrvOTswNH+5kaWQg1ESJgRHJ2xL12PJKpQD6fGvSAb\nWAwgrAT8OLKUcFQh7HaTxgfwkTz17qY8HAhhvu0BvGvV5wLh9nNX+6c2OUzf8Qc=\n=1AhY\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9968974f006993c84d3d98e999ccfd065816699c\nparent 8682431cf60d0f438d559ac1648c110d5b3a6475\nauthor Matthew Johnson <mjjohnson33@gmail.com> 1623273628 -0700\ncommitter GitHub <noreply@github.com> 1623273628 -0500\n\nadd nlb cloudwatch metrics (#1324)\n\nhttps://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-cloudwatch-metrics.html\r\n\r\n* ProcessedPackets, statistic: sum\r\n* PeakPacketsPerSecond, statistic: max\r\n* PacketsPerSecondCapacity,  statistic: min"
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/03593c99d15f3049ba87328392e389bc99716a47",
+    "html_url": "https://github.com/Netflix/atlas/commit/03593c99d15f3049ba87328392e389bc99716a47",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/03593c99d15f3049ba87328392e389bc99716a47/comments",
+    "author": {
+      "login": "copperlight",
+      "id": 1192501,
+      "node_id": "MDQ6VXNlcjExOTI1MDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1192501?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/copperlight",
+      "html_url": "https://github.com/copperlight",
+      "followers_url": "https://api.github.com/users/copperlight/followers",
+      "following_url": "https://api.github.com/users/copperlight/following{/other_user}",
+      "gists_url": "https://api.github.com/users/copperlight/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/copperlight/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/copperlight/subscriptions",
+      "organizations_url": "https://api.github.com/users/copperlight/orgs",
+      "repos_url": "https://api.github.com/users/copperlight/repos",
+      "events_url": "https://api.github.com/users/copperlight/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/copperlight/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8682431cf60d0f438d559ac1648c110d5b3a6475",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/8682431cf60d0f438d559ac1648c110d5b3a6475",
+        "html_url": "https://github.com/Netflix/atlas/commit/8682431cf60d0f438d559ac1648c110d5b3a6475"
+      }
+    ]
+  },
+  {
+    "sha": "8682431cf60d0f438d559ac1648c110d5b3a6475",
+    "node_id": "MDY6Q29tbWl0MjI2MzE0MjI6ODY4MjQzMWNmNjBkMGY0MzhkNTU5YWMxNjQ4YzExMGQ1YjNhNjQ3NQ==",
+    "commit": {
+      "author": {
+        "name": "brharrington",
+        "email": "brharrington@gmail.com",
+        "date": "2021-06-09T21:12:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-06-09T21:12:26Z"
+      },
+      "message": "update dependencies (#1323)",
+      "tree": {
+        "sha": "aceeab0c8712eaaeabde084df19db8bf5c6f2f72",
+        "url": "https://api.github.com/repos/Netflix/atlas/git/trees/aceeab0c8712eaaeabde084df19db8bf5c6f2f72"
+      },
+      "url": "https://api.github.com/repos/Netflix/atlas/git/commits/8682431cf60d0f438d559ac1648c110d5b3a6475",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgwS66CRBK7hj4Ov3rIwAADUoIAB3uOJZGP6QNNULprHPjJTJ2\nQ+u8YVvbuDaS6wM+A/VNHZw4hyDMTXneDQGjya55/SU9brsyWdsa3BTnUpRWg5qY\nG4V9y97plad6r2EG+/k7apRkhC3TwLD4OJkBC/pQFRe7kXFuPfLWjpeEo6JVfD2M\n4JgvMG/2wvlT+28qMZGsFx2TZEyhre9cTtUdEoXr+rHaseksGRxC+dVa7QTdDGS+\nIICN8XXXI05r0J0oFiEIPePSXfRvacgd0fPcHzG4EUVyW8eknaY+iPvOeKOm/QRL\nXAvno2YigngG1BFQvZcWxAMgNp0KxJVHO7MrvSpf6kf6ZRypWofJNhGJ+LAVOk4=\n=80UI\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree aceeab0c8712eaaeabde084df19db8bf5c6f2f72\nparent 6b523848ed6075f3ee0430c068fd434082242e2a\nparent fc5b377fe854fcf1f815fe3b725734317d2eb671\nauthor brharrington <brharrington@gmail.com> 1623273146 -0500\ncommitter GitHub <noreply@github.com> 1623273146 -0500\n\nupdate dependencies (#1323)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/Netflix/atlas/commits/8682431cf60d0f438d559ac1648c110d5b3a6475",
+    "html_url": "https://github.com/Netflix/atlas/commit/8682431cf60d0f438d559ac1648c110d5b3a6475",
+    "comments_url": "https://api.github.com/repos/Netflix/atlas/commits/8682431cf60d0f438d559ac1648c110d5b3a6475/comments",
+    "author": {
+      "login": "brharrington",
+      "id": 1289028,
+      "node_id": "MDQ6VXNlcjEyODkwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289028?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brharrington",
+      "html_url": "https://github.com/brharrington",
+      "followers_url": "https://api.github.com/users/brharrington/followers",
+      "following_url": "https://api.github.com/users/brharrington/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brharrington/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brharrington/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brharrington/subscriptions",
+      "organizations_url": "https://api.github.com/users/brharrington/orgs",
+      "repos_url": "https://api.github.com/users/brharrington/repos",
+      "events_url": "https://api.github.com/users/brharrington/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brharrington/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6b523848ed6075f3ee0430c068fd434082242e2a",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/6b523848ed6075f3ee0430c068fd434082242e2a",
+        "html_url": "https://github.com/Netflix/atlas/commit/6b523848ed6075f3ee0430c068fd434082242e2a"
+      },
+      {
+        "sha": "fc5b377fe854fcf1f815fe3b725734317d2eb671",
+        "url": "https://api.github.com/repos/Netflix/atlas/commits/fc5b377fe854fcf1f815fe3b725734317d2eb671",
+        "html_url": "https://github.com/Netflix/atlas/commit/fc5b377fe854fcf1f815fe3b725734317d2eb671"
+      }
+    ]
+  }
+]
